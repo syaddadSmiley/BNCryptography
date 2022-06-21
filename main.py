@@ -2,7 +2,8 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
+global key 
+key = "abcdefghijklmnopqrstuvwxyz1234567890:/?.,"
 def main():
     print("Encrpyt / Decrypt (1/2) : ")
     menu = int(input())
@@ -26,8 +27,6 @@ def Convert(string):
     return list1
 
 def encrypt():
-    global key
-    key = "abcdefghijklmnopqrstuvwxyz1234567890:/?.,"
     Convert(key)
     global arr_chiper
     arr_chiper = []
@@ -68,8 +67,6 @@ def addToFile(str):
         print("Chiper Added")
 
 def decrypt():
-    global key
-    key = "abcdefghijklmnopqrstuvwxyz1234567890:/?.,"
     Convert(key)
     global arr_text
     arr_text = []
