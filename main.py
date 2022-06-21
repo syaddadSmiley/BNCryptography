@@ -30,6 +30,7 @@ def encrypt():
     Convert(key)
     global arr_chiper
     arr_chiper = []
+    print("Input Plains Text : ")
     for i in arr:
         if i in key:
             for j in range(0, len(list1)):
